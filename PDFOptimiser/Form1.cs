@@ -7,8 +7,8 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-using iTextSharp.text.pdf;
-using iTextSharp.text;
+//using iTextSharp.text.pdf;
+//using iTextSharp.text;
 using System.IO;
 using System.Diagnostics;
 using System.Threading;
@@ -152,35 +152,35 @@ namespace PDFOptimiser
         }
         private void iTextOptimise(string PDFFile,ref Int64 PDFsFound,ref Int64 PDFsOptimised,ref StringBuilder log)
         {
-            try
-                    {
-                PDFsFound++;
+            //try
+            //        {
+            //    PDFsFound++;
 
-                //string outputDirectory = Path.GetDirectoryName(PDFFile) + "_NEW";
-                //if (!Directory.Exists(outputDirectory))
-                //    Directory.CreateDirectory(outputDirectory);
-                //string outputPDF = outputDirectory + "\\" + Path.GetFileName(PDFFile);
-                string outputPDF = PDFFile + ".new";
-                PdfReader reader = new PdfReader(PDFFile);
-                MemoryStream ms = new MemoryStream();
-                PdfStamper stamper = new PdfStamper(reader, new FileStream(outputPDF, FileMode.CreateNew), '7');
-                stamper.SetFullCompression();
-                stamper.Close();
-                ms.Flush();
-                reader.Close();
+            //    //string outputDirectory = Path.GetDirectoryName(PDFFile) + "_NEW";
+            //    //if (!Directory.Exists(outputDirectory))
+            //    //    Directory.CreateDirectory(outputDirectory);
+            //    //string outputPDF = outputDirectory + "\\" + Path.GetFileName(PDFFile);
+            //    string outputPDF = PDFFile + ".new";
+            //    PdfReader reader = new PdfReader(PDFFile);
+            //    MemoryStream ms = new MemoryStream();
+            //    PdfStamper stamper = new PdfStamper(reader, new FileStream(outputPDF, FileMode.CreateNew), '7');
+            //    stamper.SetFullCompression();
+            //    stamper.Close();
+            //    ms.Flush();
+            //    reader.Close();
 
-                if (File.Exists(outputPDF) && File.Exists(PDFFile))
-                {
-                    File.Move(PDFFile, PDFFile + ".old");
-                    File.Move(outputPDF, PDFFile);
-                }
+            //    if (File.Exists(outputPDF) && File.Exists(PDFFile))
+            //    {
+            //        File.Move(PDFFile, PDFFile + ".old");
+            //        File.Move(outputPDF, PDFFile);
+            //    }
 
-                PDFsOptimised++;
-            }
-                    catch (Exception ex)
-                    {
-                log.AppendLine(PDFFile + "\t" + ex.Message);
-            }
+            //    PDFsOptimised++;
+            //}
+            //        catch (Exception ex)
+            //        {
+            //    log.AppendLine(PDFFile + "\t" + ex.Message);
+            //}
         }
     }
 }

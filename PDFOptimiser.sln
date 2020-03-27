@@ -1,22 +1,31 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 14
-VisualStudioVersion = 14.0.25420.1
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.29230.47
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PDFOptimiser", "PDFOptimiser\PDFOptimiser.csproj", "{F6150397-5CAF-457C-92D3-7B99014A2CBC}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
+		Debug|x64 = Debug|x64
 		Release|Any CPU = Release|Any CPU
+		Release|x64 = Release|x64
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{F6150397-5CAF-457C-92D3-7B99014A2CBC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{F6150397-5CAF-457C-92D3-7B99014A2CBC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F6150397-5CAF-457C-92D3-7B99014A2CBC}.Debug|Any CPU.ActiveCfg = Release|Any CPU
+		{F6150397-5CAF-457C-92D3-7B99014A2CBC}.Debug|Any CPU.Build.0 = Release|Any CPU
+		{F6150397-5CAF-457C-92D3-7B99014A2CBC}.Debug|x64.ActiveCfg = Debug|x64
+		{F6150397-5CAF-457C-92D3-7B99014A2CBC}.Debug|x64.Build.0 = Debug|x64
 		{F6150397-5CAF-457C-92D3-7B99014A2CBC}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{F6150397-5CAF-457C-92D3-7B99014A2CBC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F6150397-5CAF-457C-92D3-7B99014A2CBC}.Release|x64.ActiveCfg = Release|x64
+		{F6150397-5CAF-457C-92D3-7B99014A2CBC}.Release|x64.Build.0 = Release|x64
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {51DA47E3-9916-4B0C-B44C-31969AD1FB29}
 	EndGlobalSection
 EndGlobal
